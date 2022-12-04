@@ -1,0 +1,164 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+
+}
+.container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+    width: 100vw;
+    background: linear-gradient(35deg, #3EA1DB 0%, #574AE8 50%, #3EA1DB 100%);
+    color: white;
+    gap: 100px;
+    padding-bottom: 15px;
+}
+#divisao ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8em;
+}
+.container ul{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 57vw;
+    list-style: none;
+    
+}
+.container ul li{
+    font-weight: 400;
+    font-size: 24px;
+}
+.campoPesquisa1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.compoPesquisa{
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    width: 58vw;
+    height: 65px;
+    display: flex;
+    align-items: center;
+
+}
+.compoPesquisa .fa-solid{
+
+   
+   margin-left:13px;
+
+}
+.compoPesquisa input{
+    width: 855px;
+    height: 65px;
+    background: transparent;
+    margin-left:10px;
+    border: 0;
+    outline: none;
+    color:#fff;
+    font-size: 18px;
+}
+.compoPesquisa input::placeholder{
+    color:#fff;
+    opacity: 0.5;
+}
+/*--------------------divisao---------------------*/
+#section{
+    background: #F3F5F7;
+
+}
+#section .posts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#section .posts ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 32px;
+    width: 58vw;
+    height: auto;
+    background: #fff;
+    margin-top: 30px;
+    list-style: none;
+}
+#section .posts ul li{
+    width: 45vw;
+}
+#section .posts ul li:nth-child(1){
+    font-size:16px;
+    line-height: 20px;
+    margin-bottom:15px;
+    margin-top:15px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#section .posts ul li:nth-child(2){
+font-size:26px;
+font-weight: 400;
+}
+#section .posts ul li:nth-child(3){
+    font-size: 18px;
+}
+#section .posts ul li p{
+    width: 50vw;
+}
+#section .posts ul li i{
+    color:#574AE8;
+}
+
+/*-----mobile----*/
+
+@media (max-width:600px){
+
+    
+    .container{
+        height: 40vh;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top:5em;
+        flex-direction: column;
+        gap:5em;
+        overflow-x:hidden;
+        
+    }
+    .container ul{
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        gap:8em;
+        margin-top:3em;
+        
+    }
+   
+    .compoPesquisa {
+        margin-bottom:5em;
+    }
+    #section .posts ul li:nth-child(2){
+        font-size:20px;
+    }
+    #section .posts ul li:nth-child(3){
+        font-size:15px;
+    }
+    #section .posts ul li:nth-child(1){
+        font-size:16px;
+    }
+}
